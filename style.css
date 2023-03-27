@@ -1,0 +1,127 @@
+
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}
+.bg-color{
+    background-color: burlywood;
+    width: 100vw;
+    height: 200vh;
+    margin-top: -10px;
+}
+ .header{
+    width: 97%;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+    left: 8px;
+    right: -8px;
+}
+.contenair{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin: 30px;
+}
+.wayroll>p{
+    margin: 10px;
+    width: 200px;
+    background-color: rgb(5, 176, 176);
+    color: white;
+}
+.city{
+    width: 500px;
+    padding-top: 20px;
+}
+.city h3{
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+.box3{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(5, 176, 176);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    
+}
+.footer{
+    width: 97%;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(5, 176, 176);
+    color: white;
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+/*---- ipad view ---- */
+@media (min-width:600px) and (max-width:900px) {
+    .bg-color{
+        height: 300vh;
+    }
+
+    .contenair{
+        flex-direction: column;
+        width: 95%;
+        position: relative;
+        right: 22px;
+    }
+    .wayroll>p{
+        width: 100%;
+    }
+    .city{
+        width: 100%;
+        height: 150px;
+    }
+    .box3{
+        width: 100%;
+    }
+}
+/*---- iphone view ---- */
+@media (min-width:300px) and (max-width:600px) {
+    .bg-color{
+        height: 300vh;
+    }
+    .contenair{
+        flex-direction: column;
+        width: 95%;
+        position: relative;
+        right: 22px;
+    }
+    .header{
+        width: 95%;
+    }
+    .wayroll>p{
+        width: 94%;
+    }
+    .wayroll>p:last-child{
+        background-color: rgb(8, 137, 137);
+    }
+    .city{
+        width: 100%;
+        display: block;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .box3{
+        width: 100%;
+    }
+
+    .footer{
+        height: 50px;
+        width: 95%;
+        position: relative;
+        /* right: 105px; */
+        left: -4px;
+    }
+    
+}
